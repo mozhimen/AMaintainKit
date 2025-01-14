@@ -23,11 +23,24 @@ dependencyResolutionManagement {
 rootProject.name = "AMaintainKit"
 include ':app'
 include ':maintaink_net_host'
-//SwiftKit
-include ':SwiftKit'
-project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")
-include ':SwiftKit:basick'
-include ':SwiftKit:bindk'
+//ALibKit_Jetbrains
+include ':ALibKit_Jetbrains'
+project(':ALibKit_Jetbrains').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetbrains")
+include ':ALibKit_Jetbrains:kotlin_stdlib'
+include ':ALibKit_Jetbrains:kotlinx_coroutines'
+//ALibKit_Squareup
+include ':ALibKit_Squareup'
+project(':ALibKit_Squareup').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Squareup")
+include ':ALibKit_Squareup:okhttp3_logging_interceptor'
+//ALibKit_Jetpack
+include ':ALibKit_Jetpack'
+project(':ALibKit_Jetpack').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetpack")
+include ':ALibKit_Jetpack:databinding'
+//ASwiftKit
+include ':ASwiftKit'
+project(':ASwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASwiftKit")
+include ':ASwiftKit:basick'
+include ':ASwiftKit:bindk'
 //KUtilKit
 include ':KUtilKit'
 project(':KUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\KUtilKit")
@@ -37,7 +50,3 @@ include ':KUtilKit:utilk_kotlin'
 include ':ANetKit'
 project(':ANetKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ANetKit")
 include ':ANetKit:netk_okhttp3_interceptor'
-//ALibKit_Squareup
-include ':ALibKit_Squareup'
-project(':ALibKit_Squareup').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Squareup")
-include ':ALibKit_Squareup:okhttp3_logging_interceptor'
