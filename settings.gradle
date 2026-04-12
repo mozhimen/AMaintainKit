@@ -1,6 +1,10 @@
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        google()
+        mavenCentral()
+        mavenLocal()
+        maven { url "https://jitpack.io" }
         maven { url 'https://maven.aliyun.com/repository/central' }
         maven { url 'https://maven.aliyun.com/repository/google' }
         maven { url 'https://maven.aliyun.com/repository/jcenter' }
@@ -11,43 +15,12 @@ dependencyResolutionManagement {
         maven { url 'https://gitee.com/liuchaoya/libcommon/raw/master/repository/' }
         maven { url "https://repo.eclipse.org/content/repositories/paho-snapshots/" }
         maven { url 'https://developer.huawei.com/repo/' }
-        maven { url "https://jitpack.io" }
         maven { url 'https://www.jitpack.io' }
         // huawei push need
         maven { url 'https://developer.huawei.com/repo/' }
-        google()
-        mavenCentral()
     }
 }
 
 rootProject.name = "AMaintainKit"
 include ':app'
 include ':net_host'
-//ALibKit_Google
-include ':ALibKit_Google'
-project(':ALibKit_Google').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Google")
-include ':ALibKit_Google:material'
-//ALibKit_Jetbrains
-include ':ALibKit_Jetbrains'
-project(':ALibKit_Jetbrains').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetbrains")
-include ':ALibKit_Jetbrains:kotlin_stdlib'
-include ':ALibKit_Jetbrains:kotlinx_coroutines'
-//ALibKit_Squareup
-include ':ALibKit_Squareup'
-project(':ALibKit_Squareup').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Squareup")
-include ':ALibKit_Squareup:okhttp3_logging_interceptor'
-include ':ALibKit_Squareup:okhttp3'
-//KUtilKit
-include ':KUtilKit'
-project(':KUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\KUtilKit")
-include ':KUtilKit:android'
-include ':KUtilKit:kotlin'
-//ASwiftKit
-include ':ASwiftKit'
-project(':ASwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASwiftKit")
-include ':ASwiftKit:basick'
-include ':ASwiftKit:uik:databinding'
-//ANetKit
-include ':ANetKit'
-project(':ANetKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ANetKit")
-include ':ANetKit:okhttp3:interceptor'
